@@ -1,0 +1,138 @@
+$fuente : 'ABeeZee', sans-serif;
+$size: 15px;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+body{
+    background: url(https://p4.wallpaperbetter.com/wallpaper/743/891/712/starry-sky-4k-8k-wallpaper-preview.jpg);
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.universo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(90px, auto);
+    grid-auto-rows: minmax(calc(100vh - 90px), auto);
+    font-family: $fuente;
+    font-size: $size;
+    background-color: rgba(254, 255, 253, 0.52);
+}
+
+.header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: white;
+    .logo{
+        width: 15%; 
+        text-align: center;
+    }
+    nav{
+
+        ul{
+            display: flex;
+            li{
+                margin: 0 30px;
+                list-style: none;
+                a{
+                    font-size: $size;
+                    color: white;
+                   text-decoration: none; 
+                   color: black;
+                }
+            }
+        }
+    }
+    .buttones{
+        width: 15%;
+        .button--login, .button--singup{
+            padding: 10px 25px;
+            border-radius: 10px;
+            border: none;
+        }
+        .button--singup{
+            background-color: rgb(19, 100, 194);
+            a{
+                font-family: $fuente;
+                color: white;
+                text-decoration: none;
+                font-size: $size;
+            }
+        }
+        .button--login{
+            background-color: rgb(248, 244, 244);
+            a{
+                text-decoration: none;
+                font-family: $fuente;
+                font-size: $size;
+            }
+        }
+    }
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    .hero--contact{
+        background-color: rgba(19, 101, 194, 0.671);
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        .hero--contact__img{
+            width: 25px;
+        }
+        p{
+            writing-mode: vertical-rl;
+            color: white;
+        }
+    }
+    .hero--info{
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20%;
+        
+        .hero--info__lema{
+            color: rgb(19, 100, 194);
+        }
+        .hero--info__titulo{
+            font-size: 60px;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .hero--info__descripcion{
+            width: 50%;
+            margin-bottom: 1.5em;
+        }
+        .hero--info__button{
+            width: 25%;
+            padding: 15px 0;
+            background-color: rgb(19, 100, 194);
+            border: none;
+            border-radius: 10px;
+            a{
+                color: white;
+                text-decoration: none;
+                font-family: $fuente;
+            }
+        }
+    }
+    .hero--imagen{
+        grid-column: 3/4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .imagen{
+            width: 60%;
+        }
+    }
+}

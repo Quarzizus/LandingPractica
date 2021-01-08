@@ -1,1 +1,197 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: black;
+}
+
+body {
+  background: url(https://p4.wallpaperbetter.com/wallpaper/743/891/712/starry-sky-4k-8k-wallpaper-preview.jpg);
+  background-attachment: fixed;
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.universo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: minmax(90px, auto);
+      grid-template-rows: minmax(90px, auto);
+  grid-auto-rows: minmax(calc(100vh - 90px), auto);
+  font-family: "ABeeZee", sans-serif;
+  font-size: 15px;
+  background-color: rgba(254, 255, 253, 0.52);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+}
+
+.header .logo {
+  width: 15%;
+  text-align: center;
+}
+
+.header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header nav ul li {
+  margin: 0 30px;
+  list-style: none;
+}
+
+.header nav ul li a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  color: black;
+}
+
+.header .buttones {
+  width: 15%;
+}
+
+.header .buttones .button--login, .header .buttones .button--singup {
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+}
+
+.header .buttones .button--singup {
+  background-color: #1364c2;
+}
+
+.header .buttones .button--singup a {
+  font-family: "ABeeZee", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.header .buttones .button--login {
+  background-color: #f8f4f4;
+}
+
+.header .buttones .button--login a {
+  text-decoration: none;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 15px;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 1fr 1fr;
+      grid-template-columns: 80px 1fr 1fr;
+}
+
+.hero .hero--contact {
+  background-color: rgba(19, 101, 194, 0.671);
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hero .hero--contact .hero--contact__img {
+  width: 25px;
+}
+
+.hero .hero--contact p {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  color: white;
+}
+
+.hero .hero--info {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20%;
+}
+
+.hero .hero--info .hero--info__lema {
+  color: #1364c2;
+}
+
+.hero .hero--info .hero--info__titulo {
+  font-size: 60px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.hero .hero--info .hero--info__descripcion {
+  width: 50%;
+  margin-bottom: 1.5em;
+}
+
+.hero .hero--info .hero--info__button {
+  width: 25%;
+  padding: 15px 0;
+  background-color: #1364c2;
+  border: none;
+  border-radius: 10px;
+}
+
+.hero .hero--info .hero--info__button a {
+  color: white;
+  text-decoration: none;
+  font-family: "ABeeZee", sans-serif;
+}
+
+.hero .hero--imagen {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .hero--imagen .imagen {
+  width: 60%;
+}
+/*# sourceMappingURL=styles.css.map */
